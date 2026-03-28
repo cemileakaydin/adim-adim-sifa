@@ -1,15 +1,50 @@
-# PRD: Adım Adım Şifa (Hospital Buddy)
+PRD: Adım Adım Şifa (Hospital Buddy)
+1. Ürün Özeti
+Adım Adım Şifa, özel gereksinimli bireylerin hastane fobisini yenmelerini sağlayan AI tabanlı bir simülasyon ve destek uygulamasıdır. Kullanıcıyı hastane süreçlerine (kan verme, muayene vb.) psikolojik olarak hazırlar.
 
-## Ürün Vizyonu
-Özel gereksinimli bireylerin hastane fobilerini yenmeleri için süreci önceden simüle eden, sakinleştirici ve rehberlik edici bir asistan.
+2. Kullanıcı Hedefleri
+Korkuyu Azaltmak: Bilinmezliği ortadan kaldırarak anksiyeteyi düşürmek.
 
-## Temel Özellikler
-1. **İşlem Seçimi:** "Kan Verme", "Muayene", "Röntgen" gibi büyük, renkli ve net butonlar.
-2. **AI Adımlama:** Gemini API, seçilen işlemi 3-4 çok basit ve korkutmayan adıma böler.
-3. **Anlık Destek:** "Korkuyorum" butonu. Basıldığında AI sakinleştirici bir egzersiz veya oyun önerir.
-4. **Görsel Dil:** Yüksek kontrastlı, büyük yazılı ve çocuk/özel gereksinim dostu arayüz.
+Süreç Simülasyonu: Hastaneye gitmeden önce dijital olarak süreci deneyimlemek.
 
-## Teknik Gereksinimler
-- Google AI Studio (Gemini 1.5 Flash API)
-- HTML/Tailwind CSS/JavaScript (En basit ve hızlı yapı)
-- Lovable/Netlify ile Deploy
+Kişiselleştirilmiş Destek: Kullanıcının özel korkularına (iğne, beyaz ışık, kalabalık) göre AI ile anlık çözümler üretmek.
+
+3. Temel Özellikler (MVP)
+3.1. AI Refakatçi (Chatbot)
+Kullanıcının "Şimdi ne olacak?" sorusuna basit, sakin ve adım adım yanıt verir.
+
+Örnek: "Önce kapıdaki ekranda ismini göreceksin, sonra hemşire seni içeri davet edecek."
+
+Gemini API kullanılarak, kullanıcının ilgi alanlarına (örneğin: uzay, süper kahramanlar) göre süreci hikayeleştirir.
+
+3.2. Etkileşimli Buton Simülasyonu
+Hastanedeki cihazları temsil eden büyük, renkli ve sesli bir buton.
+
+AI, "Şimdi sıra almak için butona basalım" dediğinde kullanıcı butona tıklar ve görsel/işitsel bir geri bildirim alır.
+
+3.3. Rahatlama Modu
+Kullanıcı "Korkuyorum" dediğinde AI; nefes egzersizi, görsel odaklanma oyunu veya sakinleştirici bir hikaye başlatır.
+
+4. Teknik Gereksinimler (Tech Stack)
+Frontend: React veya sadece HTML/JS (Tailwind CSS ile modern bir görünüm).
+
+AI: Gemini API (Google AI Studio üzerinden).
+
+Deployment: Lovable veya Netlify.
+
+Dosya Yapısı:
+
+index.html: Ana arayüz.
+
+script.js: AI bağlantısı ve buton mantığı.
+
+style.css: Erişilebilirlik odaklı (büyük yazı tipi, yumuşak renkler) tasarım.
+
+5. Kullanıcı Akışı (User Flow)
+Giriş: Kullanıcı uygulamayı açar ve yapmak istediği işlemi seçer (Örn: "Kan vereceğim").
+
+Hazırlık: AI, süreci 3 basit adıma böler.
+
+Etkileşim: AI yönlendirmesiyle kullanıcı ekrandaki butona basar (Sıra alma simülasyonu).
+
+Destek: Kullanıcı anksiyete hissederse chat kısmına yazar, AI sakinleştirici moda geçer.
