@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adım Adım Şifa | Hospital Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🏥 Adım Adım Şifa</h1>
+            <p>Hastaneye gitmeden önce birlikte hazırlanalım.</p>
+        </header>
+
+        <main>
+            <div id="start-section">
+                <div class="intro-card">
+                    <p>Merhaba! Ben senin hastane arkadaşınım. Korkularını birlikte yenebiliriz.</p>
+                    <button id="start-btn" class="pulse-animation">🚀 Simülasyonu Başlat</button>
+                </div>
+            </div>
+
+            <div id="chat-container" class="hidden">
+                <div id="chat-window">
+                    <div class="message ai-message">
+                        Merhaba! Bugün hangi hastane işlemi için hazırlık yapalım? (Örn: Kan verme, Muayene)
+                    </div>
+                </div>
+
+                <div id="quick-actions" class="actions-grid">
+                    <button class="action-btn" data-msg="Korkuyorum">😟 Korkuyorum</button>
+                    <button class="action-btn" data-msg="Canım yanar mı?">💉 Canım yanar mı?</button>
+                    <button class="action-btn" data-msg="Su içmek istiyorum">💧 Su içmek istiyorum</button>
+                    <button class="action-btn" data-msg="Mola verelim">🛑 Mola verelim</button>
+                    <button class="action-btn" data-msg="Bitti mi?">✅ Bitti mi?</button>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Buraya yazabilirsin...">
+                    <button id="send-btn">Gönder</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
