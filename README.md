@@ -1,19 +1,33 @@
 # 🏥 Adım Adım Şifa (Hospital Buddy)
 
-**Adım Adım Şifa**, hastane süreçlerinden korkan veya iletişim kurmakta zorlanan özel gereksinimli bireyler için tasarlanmış, **Yapay Zeka destekli bir simülasyon rehberidir.**
+**Özel gereksinimli bireyler için AI tabanlı hastane simülasyonu ve rehberi.**
 
-## 🎯 Projenin Amacı
-Hastaneler, duyusal hassasiyeti olan veya anksiyete yaşayan bireyler için korkutucu olabilir. Bu proje:
-- Süreçleri önceden simüle ederek belirsizliği ortadan kaldırır.
-- Konuşamayan bireyler için **AAC (Hızlı İletişim Butonları)** sunar.
-- Sakinleştirici bir dil ile güven inşa eder.
+---
 
-## 🚀 Öne Çıkan Özellikler
-- **Gemini 1.5 Flash:** Akıllı ve empatik sohbet desteği.
-- **Erişilebilirlik:** Tek tıkla ihtiyaç bildirme butonları.
-- **Dayanıklılık:** API hatası durumunda devreye giren yedek mesaj sistemi.
+## 🎥 Proje Tanıtımı
+- **🚀 Canlı Uygulama:** [adim-adim-sifa.vercel.app](https://adim-adim-sifa.vercel.app)
+- **📺 Demo Videosu:** [Buraya Loom Linkini Yapıştır]
 
-## 🛠️ Kurulum
-1. Dosyaları indirin.
-2. `script.js` içine kendi Gemini API Key'inizi ekleyin.
-3. `index.html` dosyasını tarayıcıda çalıştırın.
+## 🌟 Problem
+Otizm, DEHB ve yüksek anksiyete sahibi bireyler için hastane ortamı; belirsiz prosedürler, duyusal aşırı yükleme ve iletişim engelleriyle doludur. Bu durum, sağlık hizmetlerine erişimi zorlaştırmaktadır.
+
+## ✨ Çözüm (AI Rehberliği)
+"Adım Adım Şifa", Google'ın **Gemini 1.5 Flash** modelini kullanarak:
+- Hastane prosedürlerini kişiselleştirilmiş hikayelerle simüle eder.
+- **AAC (Alternatif İletişim):** Konuşmakta zorlananlar için tek tıkla ihtiyaç butonları sunar.
+- Belirsizliği ortadan kaldırarak anksiyeteyi düşürür.
+
+## 🛠️ Teknik Özellikler & Güvenlik
+- **Yüksek Hız:** Düşük gecikme süresi için Gemini 1.5 Flash tercih edildi.
+- **Siber Güvenlik:** API anahtarları `Vercel Environment Variables` ile gizlendi, istemci tarafında asla açıkta bırakılmadı.
+- **Dayanıklılık:** İnternet kesintilerine karşı `Fallback` sistemi entegre edildi.
+
+## 📁 Proje Yapısı
+- [idea.md](./idea.md) - Proje Fikri
+- [prd.md](./prd.md) - Gereksinim Belgesi
+- [tech-stack.md](./tech-stack.md) - Kullanılan Teknolojiler
+- [user-flow.md](./user-flow.md) - Kullanıcı Yolculuğu
+- [features/](./features/) - Kaynak Kodlar
+
+---
+*Bu proje bir AI Buildathon kapsamında toplumsal fayda amacıyla geliştirilmiştir.* 🚀
