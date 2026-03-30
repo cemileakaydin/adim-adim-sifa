@@ -6,7 +6,7 @@
 
 ## 🎥 Proje Tanıtımı
 - **🚀 Canlı Uygulama:** [adim-adim-sifa.vercel.app](https://adim-adim-sifa.vercel.app)
-- **📺 Demo Videosu:** [Buraya Loom Linkini Yapıştır]
+- **📺 Demo Videosu:** [https://www.loom.com/share/cc142480ac55400c9f848c2805c880e8]
 
 ## 🌟 Problem
 Otizm, DEHB ve yüksek anksiyete sahibi bireyler için hastane ortamı; belirsiz prosedürler, duyusal aşırı yükleme ve iletişim engelleriyle doludur. Bu durum, sağlık hizmetlerine erişimi zorlaştırmaktadır.
